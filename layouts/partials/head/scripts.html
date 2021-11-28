@@ -1,0 +1,7 @@
+<!--POP_ADS-->
+<!--ADSENSE-->
+{{ if .Site.Params.adsenseInit }}
+  {{ if not (in (.Site.BaseURL | string) "localhost") }}
+    {{ .Site.Params.adsenseInit | safeHTML }}
+  {{ end }}
+{{ end }}

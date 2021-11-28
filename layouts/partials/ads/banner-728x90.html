@@ -1,0 +1,7 @@
+{{ if .Site.Params.banner728x90 }}
+  <div
+    class="w-full h-24 max-w-3xl py-4 my-4 text-center bg-gray-600 rounded-lg md:h-32"
+  >
+    {{ if not (in (.Site.BaseURL | string) "localhost") }}{{ .Site.Params.banner728x90 | safeHTML }}{{ end }}
+  </div>
+{{ end }}

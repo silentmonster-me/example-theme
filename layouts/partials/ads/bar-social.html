@@ -1,0 +1,3 @@
+{{ if .Site.Params.socialBar }}
+  {{ if not (in (.Site.BaseURL | string) "localhost") }}{{ .Site.Params.socialBar | safeHTML }}{{ end }}
+{{ end }}
