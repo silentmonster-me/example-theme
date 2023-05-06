@@ -1,3 +1,5 @@
-{{ if .Site.Params.Advertisement.socialBar }} {{ if not (in (.Site.BaseURL |
-string) "localhost") }}{{ .Site.Params.Advertisement.socialBar | safeHTML }}{{
-end }} {{ end }}
+{{ if .Site.Params.Advertisement.socialBar }}
+  {{ if not (in (.Site.BaseURL | string) "localhost") }}
+    {{ .Site.Params.Advertisement.socialBar | safeHTML }}
+  {{ end }}
+{{ end }}

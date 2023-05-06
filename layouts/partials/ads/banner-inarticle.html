@@ -1,8 +1,7 @@
 {{ if .Site.Params.Advertisement.bannerInArticle }}
-<div
-	class="w-full h-24 max-w-3xl py-4 my-4 text-center bg-gray-600 rounded-lg md:h-32"
->
-	{{ if not (in (.Site.BaseURL | string) "localhost") }}{{
-	.Site.Params.Advertisement.bannerInArticle | safeHTML }}{{ end }}
-</div>
+  <div
+    class="w-full h-24 max-w-3xl py-4 my-4 text-center bg-gray-600 rounded-lg md:h-32"
+  >
+    {{ if not (in (.Site.BaseURL | string) "localhost") }}{{ .Site.Params.Advertisement.bannerInArticle | safeHTML }}{{ end }}
+  </div>
 {{ end }}

@@ -1,5 +1,5 @@
 {{ if .Site.Params.analyticCode }}  
   {{ if not (in (.Site.BaseURL | string) "localhost") }}
-    {{ .Site.Params.analyticCode }}
+    {{ .Site.Params.analyticCode | safeHTML }}
   {{ end }}
 {{ end }}
