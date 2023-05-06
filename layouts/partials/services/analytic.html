@@ -1,0 +1,5 @@
+{{ if .Site.Params.analyticCode }}  
+  {{ if not (in (.Site.BaseURL | string) "localhost") }}
+    {{ .Site.Params.analyticCode }}
+  {{ end }}
+{{ end }}
